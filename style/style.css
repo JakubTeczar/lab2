@@ -73,7 +73,26 @@ div.section_text:after{
     div.section_contents {
         flex-direction: column;
     }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    nav{
+        margin: 1rem auto;
+        width: 97%;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
   }
+.container{
+  display: flex;
+}
 div.section_contents{
     display: flex;
 }
