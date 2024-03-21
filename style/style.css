@@ -20,6 +20,9 @@ h5{
 p{
     text-align: justify;
 }
+header{
+    display: flex;
+}
 header, footer{
     width: 100%;
     background-color: lightgray;
@@ -27,9 +30,7 @@ header, footer{
     text-align: center;
     color: darkblue;
 }
-header div{
-    float: left;
-}
+
 header::after{
     content: "";
     display: block;
@@ -37,7 +38,6 @@ header::after{
 }
 nav{
     background-color: #cccccc;
-    float: left;
     width: 20%;
     padding: 20px;
 }
@@ -49,7 +49,6 @@ nav li{
     padding-bottom: 12px;
 }
 article{
-    float: left;
     width: 80%;
     background-color: f1f1f1;
     padding: 20px;
@@ -58,7 +57,6 @@ footer{
     display: table;
 }
 div.section_image{
-    float: left;
     padding: 5px;
 }
 div.section_text{
@@ -70,4 +68,12 @@ div.section_text:after{
     content: "";
     display: block;
     clear: both;
+}
+@media only screen and (max-width: 800px) {
+    div.section_contents {
+        flex-direction: column;
+    }
+  }
+div.section_contents{
+    display: flex;
 }
